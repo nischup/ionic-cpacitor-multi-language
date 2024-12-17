@@ -1,0 +1,59 @@
+===================Step 1: Install ngx-translate================
+
+Run the following command to add the necessary packages:
+
+npm install @ngx-translate/core @ngx-translate/http-loader --save
+
+
+=================Step 2: Configure the Translation Loader=====================
+
+Create a folder src/assets/i18n and add JSON files for each language.
+Example:
+
+en.json (English)
+
+json
+Copy code
+{
+  "HELLO": "Hello!",
+  "WELCOME": "Welcome to our app"
+}
+es.json (Spanish)
+
+json
+Copy code
+{
+  "HELLO": "¡Hola!",
+  "WELCOME": "Bienvenido a nuestra aplicación"
+}
+
+
+=====================Create a translate-loader.ts file in src/app to load JSON files dynamically:===================
+
+import { TranslateLoader } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+export class CustomTranslateLoader implements TranslateLoader {
+  constructor(private http: HttpClient) {}
+
+  getTranslation(lang: string): Observable<any> {
+    return this.http.get(`/assets/i18n/${lang}.json`);
+  }
+}
+
+==============================Update app.module.ts to set up ngx-translate:============================
+
+use this rerpository app.module.ts file just copy and paste
+
+
+===================================Step 3: Create a Language Switcher=======================================
+In your component (e.g., home.page.ts), inject TranslateService and set up the switcher logic:
+just copy and paste home page.ts and home page.module.ts
+
+
+=====================Step 4: Create the Language Switcher UI===============================
+In your home.page.html:
+just copy home page
+
+NOTE: its working fine in according to repository file

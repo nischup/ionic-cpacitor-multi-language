@@ -1,0 +1,7 @@
+{
+  "name": "tabslearning",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

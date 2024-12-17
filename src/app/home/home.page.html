@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ 'WELCOME' | translate }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-select
+        placeholder="Language"
+        [(ngModel)]="selectedLanguage"
+        (ionChange)="switchLanguage($event.detail.value)"
+      >
+        <ion-select-option value="en">English</ion-select-option>
+        <ion-select-option value="es">Español</ion-select-option>
+      </ion-select>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align: center;">
+    <h2>{{ 'HELLO' | translate }}</h2>
+  </div>
+</ion-content>
