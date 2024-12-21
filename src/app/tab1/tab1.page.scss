@@ -1,0 +1,76 @@
+.road-content {
+  --background: #e0e0e0; /* Light gray background */
+}
+
+.road-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #e0e0e0; /* Light gray background */
+  position: relative;
+}
+
+.road-svg {
+  width: 80%;
+  height: auto;
+}
+
+.regstration{
+  position: absolute;
+  top: 150px; 
+  left: 70px;
+}
+
+.tree {
+  position: absolute;
+}
+
+.tree-1 {
+  top: 120px; /* Adjust position */
+  left: 70px;
+}
+
+.tree-2 {
+  top: 110px; /* Adjust position */
+  right: 155px;
+}
+
+.tree-3 {
+  top: 135px; /* Adjust position */
+  right: 60px;
+}
+
+.tree-4 {
+  top: 220px; /* Adjust position */
+  right: 190px;
+}
+
+.tree-5 {
+  top: 260px; /* Adjust position */
+  right: 130px;
+}
+.tree-6 {
+  top: 300px; /* Adjust position */
+  right: 220px;
+}
+.tree-7 {
+  top: 440px; /* Adjust position */
+  right: 180px;
+}
+.tree-8 {
+  top: 520px; /* Adjust position */
+  right: 230px;
+}
+.tree-9 {
+  top: 530px; /* Adjust position */
+  right: 230px;
+}
+.tree-10 {
+  top: 510px; /* Adjust position */
+  right: 230px;
+}
+
+
+
